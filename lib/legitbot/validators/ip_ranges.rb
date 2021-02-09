@@ -60,7 +60,7 @@ module Legitbot
         end
 
         def partition_ips(ips)
-          return [] unless ips&.any?
+          return [] unless (ips && ips.any?)
 
           ips
             .map { |cidr| IPAddr.new(cidr) }
