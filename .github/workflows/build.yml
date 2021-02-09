@@ -9,7 +9,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        ruby: [ jruby, 2.6 ]
+        ruby: [ jruby, 2.2 ]
 
     steps:
     - uses: actions/checkout@v2
@@ -37,7 +37,7 @@ jobs:
 
     strategy:
       matrix:
-        ruby: [ 2.6 ]
+        ruby: [ 2.2 ]
 
     steps:
     - uses: actions/checkout@v2
